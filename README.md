@@ -1,7 +1,7 @@
 
 # Thermal Infrared Object Detection For Aerial Crafts 
 
-Thermal infrared object detection for aerial crafts is a cutting-edge technology that enables unmanned aerial vehicles (UAVs) and drones to identify and locate objects or subjects using thermal imaging. This capability is particularly valuable in applications such as search and rescue, surveillance, and monitoring, where traditional optical cameras may be limited by poor visibility or low light conditions. By detecting heat signatures, these systems enhance the effectiveness of aerial platforms, making them indispensable tools for various industries, including public safety, agriculture, and infrastructure inspection.
+Thermal infrared object detection for aerial crafts is a cutting-edge technology that enables unmanned aerial vehicles (UAVs) and drones to identify and locate objects or subjects using thermal imaging. This capability is particularly valuable in applications such as search and rescue, surveillance, and monitoring, where traditional optical cameras may be limited by poor visibility or low-light conditions. By detecting heat signatures, these systems enhance the effectiveness of aerial platforms, making them indispensable tools for various industries, including public safety, agriculture, and infrastructure inspection.
 
 ## Downloading the Project Repo
 
@@ -25,10 +25,10 @@ where you can change the testing image by pasting the image location to `source=
 
 The Predicted Output will be stored in `.runs/detect/`
 
-## Run Locally Thermal Detection Application
+## Run Locally Infrared Object Detection Application
 After Downloading Repo and Opening the Folder in VS Code or PyCharm.
 
-Create and activate an virtual environment, as follows:
+Create and activate a virtual environment, as follows:
 ```bash
   $ cd Thermal-Infrared-Object-Detection-For-Aerial-Crafts
   $ py -3 -m venv .venv 
