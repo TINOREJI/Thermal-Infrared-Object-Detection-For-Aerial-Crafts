@@ -3,16 +3,36 @@
 
 Thermal infrared object detection for aerial crafts is a cutting-edge technology that enables unmanned aerial vehicles (UAVs) and drones to identify and locate objects or subjects using thermal imaging. This capability is particularly valuable in applications such as search and rescue, surveillance, and monitoring, where traditional optical cameras may be limited by poor visibility or low light conditions. By detecting heat signatures, these systems enhance the effectiveness of aerial platforms, making them indispensable tools for various industries, including public safety, agriculture, and infrastructure inspection.
 
+## Downloading the Project Repo
+
+The github link for the code is https://github.com/TINOREJI/Thermal-Infrared-Object-Detection-For-Aerial-Crafts
+
 ##  Project
-->This project is worked with tools like Tensorflow, Flask, YOLOv8
+->This project is worked with tools like Tensorflow, Flask, YOLOv8.
 
 ->When you install requirements.txt and make Flask Environment you can directly call the project.
-## Run Locally
+
+## Model Training and Testing
+#### Training
+Open INFRARED_OBJECT_DETECTION_FOR_AERIAL_CRAFTS .ipynb in Jupyter Notebook or VS Code.
+Run Each Section of the Code Except Training and Model Evaluation . 
+#### Testing
+For Testing we can run the Model Validation Part with 
+```bash
+!yolo task=detect mode=predict model=runs\detect\yolov8m_v8_50e23\weights\best.pt source="upload/test2.jpg" 
+```
+where you can change the testing image by pasting the image location to `source=" "` or we can test for videos also.
+
+The Predicted Output will be stored in `.runs/detect/`
+
+## Run Locally Thermal Detection Application
+After Downloading Repo and Opening the Folder in VS Code or PyCharm.
+
 Create and activate an virtual environment, as follows:
 ```bash
-  $ cd PROJECT
-  $ python -m venv env
-  $ env/Scripts/activate
+  $ cd Thermal-Infrared-Object-Detection-For-Aerial-Crafts
+  $ py -3 -m venv .venv 
+  $ .venv/Scripts/activate
 ```
 Install Requirements
 
@@ -27,7 +47,7 @@ After that, you can run the following command and access the application at 127.
 ![Screenshot 2023-10-25 043501](https://github.com/TINOREJI/NP/assets/95184183/983bd6ef-3032-459f-b3d8-6a6cc1cad3f5)
 
 
-## Demo
+## Testing WEB Application
 ### Upload the Infrared-Thermal Images
 
 ![test](https://github.com/TINOREJI/NP/assets/95184183/608cdc1c-010b-4fe9-9fb8-0a5e6dde4e7e)
@@ -36,7 +56,7 @@ After that, you can run the following command and access the application at 127.
 
 ![1_60_60_0_00446](https://github.com/TINOREJI/NP/assets/95184183/a0435a7c-d721-47ab-9399-14e82157c589)
 
-## Results
+## Results/Output
 ![test](https://github.com/TINOREJI/NP/assets/95184183/ccc546e7-9de2-4d23-92bf-3e4a730e2e7b)
 
 ![test2](https://github.com/TINOREJI/NP/assets/95184183/08b05572-4608-4faa-bd52-8e131d322824)
