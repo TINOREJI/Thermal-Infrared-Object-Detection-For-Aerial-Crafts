@@ -5,19 +5,19 @@ Thermal infrared object detection for aerial crafts is a cutting-edge technology
 
 ## Downloading the Project Repo
 
-The github link for the code is https://github.com/TINOREJI/Thermal-Infrared-Object-Detection-For-Aerial-Crafts
+The GitHub link for the code is https://github.com/TINOREJI/Thermal-Infrared-Object-Detection-For-Aerial-Crafts
 
 ##  Project
-->This project is worked with tools like Tensorflow, Flask, YOLOv8.
+->This project is worked with tools like Tensorflow, Flask, and YOLOv8.
 
 ->When you install requirements.txt and make Flask Environment you can directly call the project.
 
 ## Model Training and Testing
 #### Training
 Open INFRARED_OBJECT_DETECTION_FOR_AERIAL_CRAFTS .ipynb in Jupyter Notebook or VS Code.
-Run Each Section of the Code Except Training and Model Evaluation . 
+Run Each Section of the Code Except Training and Model Evaluation. 
 #### Testing
-For Testing we can run the Model Validation Part with 
+For Testing, we can run the Model Validation Part with 
 ```bash
 !yolo task=detect mode=predict model=runs\detect\yolov8m_v8_50e23\weights\best.pt source="upload/test2.jpg" 
 ```
